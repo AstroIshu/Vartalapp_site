@@ -19,7 +19,7 @@ body {
     background-color: var(--primary-beige);
     color: var(--dark-text);
     line-height: 1.6;
-    padding-top: 70px; 
+    padding-top: 80px; 
 }
 
 .navbar {
