@@ -1,7 +1,7 @@
 /* styles.css */
 :root {
-    --primary-blue: #096c6c;
-    --primary-beige: #FDFBD4;
+    --primary-blue: rgb(9, 108, 108);
+    --primary-beige: rgb(253, 251, 212);
     --dark-text: #2F4F4F;
     --light-text: #FFFFFF;
     --accent-blue: #00BFFF;
@@ -19,7 +19,7 @@ body {
     background-color: var(--primary-beige);
     color: var(--dark-text);
     line-height: 1.6;
-    padding-top: 60px; /* Add padding to account for the fixed navbar */
+    padding-top: 70px; 
 }
 
 .navbar {
@@ -36,7 +36,7 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--light-text);
 }
@@ -49,8 +49,9 @@ body {
 .nav-links a {
     margin-left: 2rem;
     text-decoration: none;
+    font-size: large;
     color: var(--light-text);
-    font-weight: 400;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -72,6 +73,7 @@ body {
     background-color: var(--primary-blue);
 }
 
+
 .hero-section {
     height: 100vh;
     display: flex;
@@ -79,7 +81,7 @@ body {
     justify-content: center;
     background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
     color: var(--light-text);
-    padding: 2rem;
+    padding: 3rem;
     overflow: hidden;
 }
 
@@ -100,7 +102,7 @@ body {
 
 .hero-text h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
     line-height: 1.2;
     color: var(--dark-text);
@@ -120,7 +122,7 @@ body {
 }
 
 .hero-text .tagline {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 2.5rem;
     font-weight: 400;
     color: var(--dark-text);
@@ -135,6 +137,7 @@ body {
 .hero-text .cta-button {
     font-size: 1.1rem;
     padding: 0.8rem 2rem;
+    align-items: center;
     border-radius: 30px;
     background-color: var(--accent-blue);
     color: var(--light-text);
@@ -195,7 +198,7 @@ body {
 section h2 {
     position: relative;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--primary-blue);
@@ -264,6 +267,14 @@ h2 {
     color: var(--primary-blue);
 }
 
+h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
 .stats-grid,
 .approach-grid,
 .features-grid {
@@ -306,6 +317,7 @@ h2 {
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .team-member:hover {
